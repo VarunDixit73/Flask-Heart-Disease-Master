@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endif %}
+    
+<div class="container">
+    <div class="card card-body" style="border: 1px solid black; box-shadow: 0 0 10px black;">
+        <h2>Flask app for Heart Disease Prediction</h2>
+    </div>
+    <br>
+    <div>
+        <h2> What is heart disease? </h2>
+        <p>Heart disease is a general term that means that the heart is not working normally. Babies can be born with heart disease. 
+            This is called congenital heart disease. If people get heart disease later, it is called acquired heart disease. Most heart disease is acquired.</p>
+        <h2> Symptoms </h2>
+        <p>
+            A person can have heart disease and not feel sick. Some people with heart disease have symptoms. This is when there are changes or pain in the body to show a disease is there. Some symptoms of heart disease are:
+            
+            Pain in the chest—the heart muscle is not getting enough flow to keep it going.
+            Trouble breathing—blood may back up into the lungs.
+            Palpitations (a feeling that the heart is beating too fast, too hard, or not regularly).
+            Swelling of feet or legs—blood is backing up from the heart into the lower body.
+            Feeling weak because the body and brain are not getting enough blood to supply them with oxygen.
+            Cyanosis (skin turning a blue colour) means that too little oxygen is in the bloodstream to supply the cells in the body.</p>
+        <h2> Deaths</h2>
+        <p>Heart disease is the biggest killer of both men and women in the United States, England, Wales, and Canada. For example, heart disease causes 4 out of every 10 deaths in the United States. This is more than all kinds of cancer put together. 
+        Also, one person dies of heart disease about every minute in the United States alone.</p>
+    </div>
+</div>
+{% endblock %}
